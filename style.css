@@ -1,0 +1,89 @@
+/* Tooltip container */
+
+@font-face {
+  font-family: "IRANSans";
+  src: url("IRANSans\ 400.ttf");
+}
+body {
+  direction: rtl;
+  font-family: "IRANSans";
+}
+
+.container {
+  margin: auto;
+  width: 300px;
+  padding: 10px;
+}
+.info {
+  width: 15px;
+}
+.flash {
+  display: block;
+}
+.tooltip {
+  position: relative;
+  display: inline;
+}
+
+.container h3 {
+  display: inline;
+  align-items: center;
+}
+
+.container p {
+  font-size: 14px;
+  padding: 10px;
+}
+.products span {
+  padding: 10px;
+  margin-bottom: px;
+  border: 1px solid #f3f3f3;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  font-size: 10px;
+}
+.products span:hover {
+ background-color: #D2EAD8;
+}
+.signup {
+  background-color: rgba(94, 154, 108, 1);
+  color: #fff;
+  width: 100%;
+  border: none;
+  height: 45px;
+  font-weight: 700;
+}
+.policy {
+  font-size: 12px;
+  text-align: center;
+}
+.policy a {
+  color: #d6e5da;
+  font-size: 8px;
+  text-align: center;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 10px;
+  width: 120px;
+  background-color: #f3f3f3;
+  color: #a3c9ac;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext {
+  top: -5px;
+  right: 105%;
+}
